@@ -13,3 +13,11 @@ mondayWork()
 mondayWork('work from home')
 
 
+function wrapAdjective(result="*"){
+    //const innerFunction = function( item="special")
+    return function(item="special") {
+        return `You are ${result}${item}${result}!`
+    }
+}
+wrapAdjective("")("a hard worker")
+wrapAdjective("||")("a dedicated programmer")
